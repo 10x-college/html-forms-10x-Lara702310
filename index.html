@@ -23,10 +23,10 @@
         <fieldset>
             <legend>Vessel Diagnostics</legend>
             <label for="hull-damage">Hull Damage (%)</label>
-            <input type="number" id="hull-damage" name="hull_damage">
+            <input type="number" id="hull-damage" name="hull_damage" required>
             <label for="emergency_level">Emergency Level:</label>
-            <select id="emergency_level" name="emergency_level" required size="3">
-                <option value="disabled selected">Choose priority</option>
+            <select id="emergency_level" name="emergency_level" required>
+                <option value="" disabled selected>Choose priority</option>
                 <option value="low">Low</option>
                 <option value="medium">Medium</option>
                 <option value="high">High</option>
@@ -37,8 +37,7 @@
             <label for="sos_message">SOS Message:</label>
             <textarea id="sos_message" name="sos_message" rows="3" required></textarea>
 
-        </fieldset>
-        <fieldset>
+
             <div>
                 <input type="checkbox" id="quarantine" name="quarantine" required>
                 <label for="quarantine">I agree to quarantine protocols.</label>
